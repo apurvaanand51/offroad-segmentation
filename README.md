@@ -43,9 +43,15 @@ segmentation-models-pytorch
 
 ## 📂 Project Structure
 
-project/ │ ├── dataset/ │ ├── images/ │ ├── masks/ │ ├── models/ │ └──
-best_model.pth │ ├── train.py ├── evaluate.py ├── predict.py ├──
-utils.py ├── requirements.txt └── README.md
+project/ │
+├── dataset/ 
+  │ ├── images/ 
+  │ ├── masks/ 
+  │ ├── models/ 
+  │ └── best_model.pth 
+  │ ├── train_segmentation.py 
+    ├── test_segmentation.py
+└── README.md
 
 ------------------------------------------------------------------------
 
@@ -53,7 +59,7 @@ utils.py ├── requirements.txt └── README.md
 
 ### 1️⃣ Clone Repository
 
-git clone `<your-repo-link>`{=html} cd project
+git clone `<github.com/apurvaanand51/offroad-segmentation.git>`{=html} cd project
 
 ### 2️⃣ Install Dependencies
 
@@ -65,7 +71,7 @@ Place images inside: dataset/images/
 
 Place masks inside: dataset/masks/
 
-Ensure filenames match (e.g., image1.jpg & image1.png)
+Ensure filenames match (e.g., 00001.jpg & 000001.png)
 
 ### 4️⃣ Train the Model
 
@@ -88,8 +94,10 @@ python predict.py --image path_to_image.jpg
 
 ## 📊 Reproducing Final Results
 
-Use: - Learning Rate: 1e-4 - Optimizer: Adam - Loss: CrossEntropy + Dice
-Loss - Epochs: 30--50
+- Use: - Learning Rate: 1e-4 
+- Optimizer: Adam
+- Loss: CrossEntropy + Dice
+- Epochs: 30--50
 
 Example:
 
@@ -125,4 +133,9 @@ Higher values indicate better segmentation performance.
 
 Developed for: Hack For Green Bharat -- Duality AI
 
-Team: \[Your Team Name\]
+Team: \[Jet Brains\]
+Members - 
+- Apurva Anand
+- Shifa
+- Bhumika Upveja
+- Gurnoor Kaur
