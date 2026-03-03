@@ -1,12 +1,13 @@
 # 🌿 Generalized Semantic Segmentation for Off-Road Environment (Perfect IoU - 0.3443)
 
 ## Run Locally - 
-- `git clone https://github.com/apurvaanand51/offroad-segmentation.git`
+- ```git clone https://github.com/apurvaanand51/offroad-segmentation.git```
 - `python -m venv venv`
 - `venv/Scripts/activate`
 - `pip install -r requirements.txt`
 - `uvicorn app:app --reload`
 - Open http://127.0.0.1:8000/ in Browser
+
 
 ## 📊 Training Results - 
 
