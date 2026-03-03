@@ -1,6 +1,6 @@
-# 🌿 Generalized Semantic Segmentation for Off-Road Environment
+# 🌿 Generalized Semantic Segmentation for Off-Road Environment (Perfect IoU - 0.3443)
 
-## 📊 Training Results
+## 📊 Training Results - 
 
 ## Final Metrics:
 - Final Train Loss: 0.7757
