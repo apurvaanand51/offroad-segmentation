@@ -1,5 +1,23 @@
 # 🌿 Generalized Semantic Segmentation for Off-Road Environment
 
+## 📊 Training Results
+
+## Final Metrics:
+- Final Train Loss: 0.7757
+- Final Val Loss: 0.7740
+- Final Train IoU: 0.3433
+- Final Val IoU: 0.3166
+- Final Train Dice: 0.4694
+- Final Val Dice: 0.4645
+- Final Train Accuracy: 0.7128
+- Final Val Accuracy: 0.7139
+
+## Best Results:
+- Best Val IoU: 0.3173 (Epoch 31)
+- Best Val Dice: 0.4663 (Epoch 31)
+- Best Val Accuracy: 0.7139 (Epoch 35)
+- Lowest Val Loss: 0.7740 (Epoch 35)
+
 ---
 
 ## 📈 Per-Epoch Training History
