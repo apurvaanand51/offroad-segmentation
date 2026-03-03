@@ -1,137 +1,65 @@
 # 🌿 Generalized Semantic Segmentation for Off-Road Environment
 
-### Hack For Green Bharat -- Duality AI
+## TRAINING RESULTS
+==================================================
 
-This project focuses on **semantic segmentation of off-road
-environments** using synthetic training data to improve environmental
-understanding in unstructured terrains.
+Final Metrics:
+  Final Train Loss:     0.7757
+  Final Val Loss:       0.7740
+  Final Train IoU:      0.3433
+  Final Val IoU:        0.3166
+  Final Train Dice:     0.4694
+  Final Val Dice:       0.4645
+  Final Train Accuracy: 0.7128
+  Final Val Accuracy:   0.7139
+==================================================
 
-------------------------------------------------------------------------
+Best Results:
+  Best Val IoU:      0.3173 (Epoch 31)
+  Best Val Dice:     0.4663 (Epoch 31)
+  Best Val Accuracy: 0.7139 (Epoch 35)
+  Lowest Val Loss:   0.7740 (Epoch 35)
+==================================================
 
-## 📌 Project Overview
-
-Autonomous systems operating in rural and off-road environments face
-challenges due to: - Lack of structured roads - Irregular terrain -
-Limited labeled real-world datasets
-
-To address this, we trained a semantic segmentation model using
-synthetic datasets and evaluated it on real-world samples.
-
-------------------------------------------------------------------------
-
-## 🛠️ Environment & Dependency Requirements
-
-### System Requirements
-
--   Python 3.9+
--   CUDA-enabled GPU (Recommended)
--   8GB+ RAM
-
-### Required Libraries
-
-Install dependencies using:
-
-pip install -r requirements.txt
-
-Or manually:
-
-pip install torch torchvision torchaudio pip install opencv-python pip
-install numpy pip install matplotlib pip install tqdm pip install
-segmentation-models-pytorch
-
-------------------------------------------------------------------------
-
-## 📂 Project Structure
-
-project/ │
-├── dataset/ 
-  │ ├── images/ 
-  │ ├── masks/ 
-  │ ├── models/ 
-  │ └── best_model.pth 
-  │ ├── train_segmentation.py 
-    ├── test_segmentation.py
-└── README.md
-
-------------------------------------------------------------------------
-
-## 🚀 Step-by-Step Instructions
-
-### 1️⃣ Clone Repository
-
-git clone `<github.com/apurvaanand51/offroad-segmentation.git>`{=html} cd project
-
-### 2️⃣ Install Dependencies
-
-pip install -r requirements.txt
-
-### 3️⃣ Prepare Dataset
-
-Place images inside: dataset/images/
-
-Place masks inside: dataset/masks/
-
-Ensure filenames match (e.g., 00001.jpg & 000001.png)
-
-### 4️⃣ Train the Model
-
-python train.py
-
-Best model will be saved to: models/best_model.pth
-
-### 5️⃣ Evaluate the Model
-
-python evaluate.py
-
-Outputs: - Pixel Accuracy - IoU (Intersection over Union) - Mean IoU
-(mIoU) - Dice Score
-
-### 6️⃣ Run Inference
-
-python predict.py --image path_to_image.jpg
-
-------------------------------------------------------------------------
-
-## 📊 Reproducing Final Results
-
-- Use: - Learning Rate: 1e-4 
-- Optimizer: Adam
-- Loss: CrossEntropy + Dice
-- Epochs: 30--50
-
-Example:
-
-python train.py --epochs 50 --lr 0.0001 python evaluate.py --model
-models/best_model.pth
-
-Expected Results (approx): - mIoU: 0.65 -- 0.80 - Pixel Accuracy: 85%+ -
-Dice Score: 0.70+
-
-------------------------------------------------------------------------
-
-## 📈 Understanding Output Metrics
-
-Pixel Accuracy → Percentage of correctly classified pixels.
-
-IoU → Overlap between predicted mask and ground truth.
-
-Dice Score → Similarity between prediction and actual mask.
-
-Higher values indicate better segmentation performance.
-
-------------------------------------------------------------------------
-
-## 📌 Notes
-
--   Synthetic training improves generalization to unseen terrains.
--   Performance depends on dataset quality and augmentation strategy.
--   GPU training significantly reduces training time.
-
-------------------------------------------------------------------------
-
-## 👨‍💻 Hackathon Submission
-
-Developed for: Hack For Green Bharat -- Duality AI
+Per-Epoch History:
+----------------------------------------------------------------------------------------------------
+Epoch    Train Loss   Val Loss     Train IoU    Val IoU      Train Dice   Val Dice     Train Acc    Val Acc     
+----------------------------------------------------------------------------------------------------
+1        1.2480       1.0064       0.2325       0.2235       0.3281       0.3502       0.6522       0.6545      
+2        0.9550       0.9170       0.2628       0.2467       0.3678       0.3811       0.6732       0.6745      
+3        0.8993       0.8795       0.2831       0.2655       0.3959       0.4046       0.6835       0.6853      
+4        0.8719       0.8587       0.2919       0.2735       0.4065       0.4147       0.6884       0.6905      
+5        0.8555       0.8453       0.2981       0.2778       0.4123       0.4189       0.6920       0.6940      
+6        0.8444       0.8365       0.3055       0.2848       0.4231       0.4281       0.6948       0.6968      
+7        0.8358       0.8284       0.3096       0.2882       0.4279       0.4327       0.6967       0.6989      
+8        0.8293       0.8241       0.3108       0.2883       0.4294       0.4323       0.6979       0.7002      
+9        0.8238       0.8182       0.3190       0.2961       0.4410       0.4422       0.6995       0.7020      
+10       0.8192       0.8138       0.3183       0.2959       0.4380       0.4412       0.7006       0.7029      
+11       0.8152       0.8107       0.3197       0.2962       0.4399       0.4412       0.7020       0.7042      
+12       0.8119       0.8094       0.3213       0.2979       0.4418       0.4434       0.7026       0.7046      
+13       0.8088       0.8051       0.3247       0.3003       0.4468       0.4458       0.7036       0.7058      
+14       0.8058       0.8016       0.3263       0.3028       0.4471       0.4492       0.7042       0.7064      
+15       0.8037       0.7993       0.3303       0.3052       0.4530       0.4522       0.7051       0.7074      
+16       0.8012       0.7977       0.3301       0.3056       0.4529       0.4529       0.7058       0.7079      
+17       0.7989       0.7965       0.3311       0.3070       0.4547       0.4543       0.7058       0.7080      
+18       0.7971       0.7943       0.3284       0.3030       0.4492       0.4490       0.7066       0.7087      
+19       0.7950       0.7922       0.3299       0.3049       0.4509       0.4509       0.7073       0.7093      
+20       0.7933       0.7902       0.3344       0.3089       0.4587       0.4561       0.7076       0.7096      
+21       0.7920       0.7887       0.3345       0.3099       0.4585       0.4578       0.7077       0.7098      
+22       0.7902       0.7872       0.3364       0.3100       0.4604       0.4576       0.7088       0.7105      
+23       0.7888       0.7864       0.3356       0.3097       0.4598       0.4566       0.7090       0.7107      
+24       0.7874       0.7846       0.3385       0.3119       0.4620       0.4595       0.7092       0.7111      
+25       0.7859       0.7838       0.3369       0.3104       0.4610       0.4579       0.7097       0.7115      
+26       0.7847       0.7827       0.3371       0.3119       0.4613       0.4592       0.7101       0.7117      
+27       0.7835       0.7813       0.3376       0.3128       0.4624       0.4605       0.7106       0.7121      
+28       0.7824       0.7802       0.3380       0.3130       0.4630       0.4608       0.7108       0.7123      
+29       0.7814       0.7794       0.3425       0.3153       0.4672       0.4637       0.7112       0.7126      
+30       0.7803       0.7784       0.3416       0.3138       0.4664       0.4615       0.7116       0.7130      
+31       0.7793       0.7778       0.3443       0.3173       0.4700       0.4663       0.7114       0.7129      
+32       0.7783       0.7765       0.3420       0.3152       0.4681       0.4630       0.7119       0.7133      
+33       0.7774       0.7765       0.3436       0.3166       0.4692       0.4652       0.7123       0.7134      
+34       0.7764       0.7771       0.3423       0.3161       0.4673       0.4646       0.7121       0.7133      
+35       0.7757       0.7740       0.3433       0.3166       0.4694       0.4645       0.7128       0.7139      
 
 Team: \[Jet Brains\]
 Members - 
