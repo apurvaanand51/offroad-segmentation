@@ -21,9 +21,11 @@ uvicorn app:app --reload
 
 ## Web App - 
 
-<img width="952" height="512" alt="Screenshot 2026-03-03 212155" src="https://github.com/user-attachments/assets/94ccc3e6-da62-4bd2-9d0b-51c60e512629" />
+<img width="500" height="500" alt="Screenshot 2026-03-03 212053" src="https://github.com/user-attachments/assets/bbe4dd5d-512d-43ee-be82-59e7b07668e4" />
 
-<img width="952" height="512" alt="Screenshot 2026-03-03 212053" src="https://github.com/user-attachments/assets/bbe4dd5d-512d-43ee-be82-59e7b07668e4" />
+
+<img width="500" height="500" alt="Screenshot 2026-03-03 212155" src="https://github.com/user-attachments/assets/94ccc3e6-da62-4bd2-9d0b-51c60e512629" />
+
 
 
 ## 📊 Training Results - 
