@@ -4,10 +4,18 @@
 ``` python
   git clone https://github.com/apurvaanand51/offroad-segmentation.git
 ```
-- `python -m venv venv`
-- `venv/Scripts/activate`
-- `pip install -r requirements.txt`
-- `uvicorn app:app --reload`
+``` pyhton
+python -m venv venv
+```
+``` pyhton
+venv/Scripts/activate
+```
+``` pyhton
+pip install -r requirements.txt
+```
+``` python
+uvicorn app:app --reload
+```
 - Open http://127.0.0.1:8000/ in Browser
 
 
