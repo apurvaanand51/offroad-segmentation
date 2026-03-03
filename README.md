@@ -8,6 +8,7 @@ git clone https://github.com/apurvaanand51/offroad-segmentation.git
 python -m venv venv
 ```
 ``` pyhton
+
 venv/Scripts/activate
 ```
 ``` pyhton
@@ -17,6 +18,12 @@ pip install -r requirements.txt
 uvicorn app:app --reload
 ```
 - Open http://127.0.0.1:8000/ in Browser
+
+## Web App - 
+
+<img width="952" height="512" alt="Screenshot 2026-03-03 212155" src="https://github.com/user-attachments/assets/94ccc3e6-da62-4bd2-9d0b-51c60e512629" />
+
+<img width="952" height="512" alt="Screenshot 2026-03-03 212053" src="https://github.com/user-attachments/assets/bbe4dd5d-512d-43ee-be82-59e7b07668e4" />
 
 
 ## 📊 Training Results - 
