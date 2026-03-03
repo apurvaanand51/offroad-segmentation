@@ -2,7 +2,7 @@
 
 ## Run Locally - 
 ``` python
-  git clone https://github.com/apurvaanand51/offroad-segmentation.git
+git clone https://github.com/apurvaanand51/offroad-segmentation.git
 ```
 ``` pyhton
 python -m venv venv
