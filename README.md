@@ -62,6 +62,9 @@
 | Landscape      | 0.5309   |
 | Sky            | 0.9416   |
 
+<img width="1484" height="882" alt="per_class_metrics" src="https://github.com/user-attachments/assets/20db1800-a100-4aec-a325-9436a36b8a54" />
+
+
 ---
 
 ### 📌 Summary
