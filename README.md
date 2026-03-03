@@ -8,7 +8,6 @@ git clone https://github.com/apurvaanand51/offroad-segmentation.git
 python -m venv venv
 ```
 ``` pyhton
-
 venv/Scripts/activate
 ```
 ``` pyhton
