@@ -42,6 +42,36 @@
 - **Best Validation Accuracy:** 0.7139 (Epoch 35)
 - **Lowest Validation Loss:** 0.7740 (Epoch 35)
 
+## 🧪 Evaluation Results - 
+- Mean IoU: 0.2358
+- 
+---
+
+## 📊 Per-Class IoU
+
+| Class           | IoU     |
+|----------------|----------|
+| Background     | 0.0000   |
+| Trees          | 0.1161   |
+| Lush Bushes    | 0.0061   |
+| Dry Grass      | 0.1659   |
+| Dry Bushes     | 0.0605   |
+| Ground Clutter | 0.0700   |
+| Logs           | 0.0061   |
+| Rocks          | 0.2232   |
+| Landscape      | 0.5309   |
+| Sky            | 0.9416   |
+
+---
+
+### 📌 Summary
+
+- **Mean IoU:** 0.2358  
+- **Best Performing Class:** Sky (0.9416)  
+- **Second Best:** Landscape (0.5309)  
+- **Lowest IoU Classes:** Background (0.0000), Lush Bushes (0.0061), Logs (0.0061)
+
+---
 
 Team: \[Jet Brains\]
 Members - 
