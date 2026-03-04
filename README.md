@@ -1,4 +1,4 @@
-# 🌿 Generalized Semantic Segmentation for Off-Road Environment (Perfect IoU - 0.3443)
+# 🌿 Generalized Semantic Segmentation for Off-Road Environment (Perfect IoU Score - 0.3443)
 
 ## Run Locally - 
 ``` python
