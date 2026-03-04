@@ -4,6 +4,9 @@
 ``` python
 git clone https://github.com/apurvaanand51/offroad-segmentation.git
 ```
+``` python
+cd offroad-segmentation
+```
 ``` pyhton
 python -m venv venv
 ```
